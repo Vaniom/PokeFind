@@ -1,0 +1,14 @@
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.caption {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.pokemonImg {
+    width: 200px;
+    height: auto;
+}
