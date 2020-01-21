@@ -47,8 +47,79 @@ class App extends React.Component {
         weight: pokemonElt.weight/10,
         speciesName: pokemonElt.species.name,
         stats: pokemonElt.stats,
-        type: pokemonElt.types[0].type.name
+        //type: pokemonElt.types[0].type.name
       }))
+    })
+  }
+
+  getType = () => {
+    this.state.pokemon.map((pokemonElt) => {
+      pokemonElt.types.map((typeElt) => {
+        if(typeElt.slot === 1 ) {
+          let type = typeElt.type.name;
+          switch (type){
+            case "water":
+              this.setState({type: "Eau"});
+              break;
+            case "fire":
+              this.setState({type: "Feu"});
+              break;
+              case "normal":
+              this.setState({type: "Normal"});
+              break;
+              case "electric":
+              this.setState({type: "Electrik"});
+              break;
+              case "grass":
+              this.setState({type: "Plante"});
+              break;
+              case "ice":
+              this.setState({type: "Glace"});
+              break;
+              case "fighting":
+              this.setState({type: "Combat"});
+              break;
+              case "poison":
+              this.setState({type: "Poison"});
+              break;
+              case "ground":
+              this.setState({type: "Sol"});
+              break;
+              case "flying":
+              this.setState({type: "Vol"});
+              break;
+              case "psychic":
+              this.setState({type: "Psy"});
+              break;
+              case "bug":
+              this.setState({type: "Insecte"});
+              break;
+              case "rock":
+              this.setState({type: "Roche"});
+              break;
+              case "ghost":
+              this.setState({type: "Spectre"});
+              break;
+              case "dragon":
+              this.setState({type: "Dragon"});
+              break;
+              case "dark":
+              this.setState({type: "Ténèbres"});
+              break;
+              case "steel":
+              this.setState({type: "Acier"});
+              break;
+              case "fairy":
+              this.setState({type: "Fée"});
+              break;
+              default:
+                this.setState({type: type});
+          }
+          /*return (this.setState( {
+            type: typeElt.type.name
+          }))*/
+        }
+      })
     })
   }
 
@@ -143,6 +214,7 @@ class App extends React.Component {
     const getStats = () => {this.getStats()};
     const displayCard = () => {this.displayCard()};
     const hideCard = () => {this.hideCard()};
+    const getType = () => {this.getType()};
     P.getPokemonByName(englishPokemonName.toLowerCase())
       .then(function(response) {
         console.log(response);
@@ -151,6 +223,7 @@ class App extends React.Component {
         addGameid();
         addSpeciesData();
         getStats();
+        getType();
         displayCard();
       })
       .catch(function(error) {
