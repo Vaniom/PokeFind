@@ -3,24 +3,23 @@ import React from 'react';
 class PokemonCard extends React.Component {
 
     showOnlyfrenchDescriptions = (entry, index) => {
-        if(entry.language.name === "fr") {
+        if((entry.language.name === "fr") && (entry.version.name === "alpha-sapphire")) {
             return(
-                <p key={index}>{entry.flavor_text} <span className="caption">version: {entry.version.name}</span></p>
+                <p id="text-description" key={index}>{entry.flavor_text}</p>
             );
         }
     }
 
     render() {
         return (
-            <div>
+            <div id="card-container">
             {
                 this.props.pokemon.map(pokemonElement =>
                 <div key={pokemonElement.id} className="pokemon-container">
-                    <h2>Nom français: {this.props.frenchName}</h2>
-                    <h3>Nom anglais: {pokemonElement.name}</h3>
-                    <img src={pokemonElement.sprites.front_default} alt="" className="pokemonImg" />
-                    <p>Taille: {this.props.height}m | Poids: {this.props.weight}kg</p>
-                    <h3>La description de {this.props.frenchName} dans les différentes versions du jeu</h3>
+                    <h2 id="pokemon-name">{this.props.frenchName} <span id="hp">pv {this.props.hp}</span> <br /><span id="english-name">(en: {pokemonElement.name})</span></h2>
+                    <img src={"https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + this.props.gameid + ".png"} alt="" className="pokemonImg" />
+                    <p id="pkmn-description">id={this.props.gameid} {this.props.genus} Taille: {this.props.height}m Poids: {this.props.weight}kg</p>
+                    <h3 id="title-description">Description:</h3>
                 </div>
                 )
             }
