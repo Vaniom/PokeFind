@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/PokeFind/static/css/main.58266395.chunk.css",
-    "main.js": "/PokeFind/static/js/main.9d15b57c.chunk.js",
-    "main.js.map": "/PokeFind/static/js/main.9d15b57c.chunk.js.map",
+    "main.css": "/PokeFind/static/css/main.49050e08.chunk.css",
+    "main.js": "/PokeFind/static/js/main.bcbc6986.chunk.js",
+    "main.js.map": "/PokeFind/static/js/main.bcbc6986.chunk.js.map",
     "runtime-main.js": "/PokeFind/static/js/runtime-main.9cdc894b.js",
     "runtime-main.js.map": "/PokeFind/static/js/runtime-main.9cdc894b.js.map",
     "static/js/2.9a5b9e45.chunk.js": "/PokeFind/static/js/2.9a5b9e45.chunk.js",
     "static/js/2.9a5b9e45.chunk.js.map": "/PokeFind/static/js/2.9a5b9e45.chunk.js.map",
     "index.html": "/PokeFind/index.html",
-    "precache-manifest.89d83155357badf4674d50e6876f409e.js": "/PokeFind/precache-manifest.89d83155357badf4674d50e6876f409e.js",
+    "precache-manifest.6ae15265ba0c3335c5d606b495fd10b6.js": "/PokeFind/precache-manifest.6ae15265ba0c3335c5d606b495fd10b6.js",
     "service-worker.js": "/PokeFind/service-worker.js",
-    "static/css/main.58266395.chunk.css.map": "/PokeFind/static/css/main.58266395.chunk.css.map",
-    "static/media/style.css": "/PokeFind/static/media/null_card.95bddec6.png"
+    "static/css/main.49050e08.chunk.css.map": "/PokeFind/static/css/main.49050e08.chunk.css.map",
+    "static/media/style.css": "/PokeFind/static/media/null_card.a0116668.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9cdc894b.js",
     "static/js/2.9a5b9e45.chunk.js",
-    "static/css/main.58266395.chunk.css",
-    "static/js/main.9d15b57c.chunk.js"
+    "static/css/main.49050e08.chunk.css",
+    "static/js/main.bcbc6986.chunk.js"
   ]
 }

@@ -1,16 +1,46 @@
 body {
-    padding-left: 50px;
-    padding-right: 50px;
+    background-color: red;
+}
+
+button {
+    background-color: rgb(4, 241, 16);
+    color: black;
+    border-radius: 10px;
+    width: 50px;
+    height: 30px;
+    box-shadow: 2px 2px 5px grey;
+    margin-left: 50px;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}
+
+#card-wrapper {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 #card-container {
+    display: none;
+    position: relative;
     background-image: url("./assets/null_card.png");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin: 0 auto;
     width: 450px;
     height: 600px;
+    text-align: left !important;
 }
 
 /* card styles */
@@ -27,11 +57,10 @@ body {
     line-height: 13px;
 }
 
-#hp {
+#type {
     float: right;
-    padding-right: 85px;
+    padding-right: 60px;
     font-size: 16px;
-    padding-top: 8px;
 }
 
 .pokemonImg {
@@ -53,8 +82,36 @@ body {
     font-size: 12px;
 }
 
-#title-description {
+#title-description, #base-stats-title {
     padding-left: 20px;
     font-size: 16px;
     line-height: 5px;
+}
+
+#pkmn-id {
+    margin-left: 20px;
+    margin-top: -15px;
+    margin-bottom: -5px;
+}
+
+#stats-container {
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+#stats-resume {
+    position: absolute;
+    left: 225px;
+    bottom: 45px;
+}
+
+#average {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#total {
+    font-size: 18px;
+    font-weight: bold;
 }
